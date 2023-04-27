@@ -7,7 +7,7 @@ class Node {
   }
 }
 
-class Linklist {
+class Mail {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -46,17 +46,17 @@ class Linklist {
   }
 }
 console.clear();
-let linklist = new Linklist();
-console.log(linklist.push(39));
-console.log(linklist.push(34));
+let Hub = new Mail();
+console.log(Mail.push(39));
+console.log(Mail.push(34));
 
-console.log(linklist.push(34));
-console.log(linklist.push([6, 8, 9]));
-console.log(linklist.push(79));
-console.log(linklist.push({ name: "peter" }));
-console.log(linklist.push(09));
+console.log(Mail.push(34));
+console.log(Mail.push([6, 8, 9]));
+console.log(Mail.push(79));
+console.log(Mail.push({ name: "peter" }));
+console.log(Mail.push(09));
 console.log("");
-console.log(linklist.length);
-linklist.remove();
+console.log(Mail.length);
+Mail.remove();
 console.log("");
-console.log(linklist.length);
+console.log(Mail.length);

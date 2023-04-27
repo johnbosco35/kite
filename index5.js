@@ -1,13 +1,13 @@
 /** @format */
 
-class Best {
+class Node {
   constructor(val) {
     this.value = val;
     this.next = null;
   }
 }
 
-class Fitness {
+class Hub {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -15,7 +15,7 @@ class Fitness {
   }
 
   push(val) {
-    let Best = new Best(val);
+    let node = new Node(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,17 +46,17 @@ class Fitness {
   }
 }
 console.clear();
-let Fitness = new Best();
-console.log(Best.push(39));
-console.log(Best.push(34));
+let listeds = new Mail();
+console.log(Mail.push(39));
+console.log(Mail.push(34));
 
-console.log(Best.push(34));
-console.log(Best.push([6, 8, 9]));
-console.log(Best.push(79));
-console.log(Best.push({ name: "peter" }));
-console.log(Best.push(09));
+console.log(Mail.push(34));
+console.log(Mail.push([6, 8, 9]));
+console.log(Mail.push(79));
+console.log(Mail.push({ name: "peter" }));
+console.log(Mail.push(09));
 console.log("");
-console.log(Best.length);
-Best.remove();
+console.log(Mail.length);
+Mail.remove();
 console.log("");
-console.log(Best.length);
+console.log(Mail.length);
