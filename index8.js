@@ -1,13 +1,13 @@
 /** @format */
 
-class Node {
+class Code {
   constructor(val) {
     this.value = val;
     this.next = null;
   }
 }
 
-class Tail {
+class Lab {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -15,7 +15,7 @@ class Tail {
   }
 
   push(val) {
-    let node = new Node(val);
+    let Code = new Code(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,17 +46,17 @@ class Tail {
   }
 }
 console.clear();
-let Hub = new Tail();
-console.log(Tail.push(39));
-console.log(Tail.push(34));
+let Lab = new Lab();
+console.log(Lab.push(39));
+console.log(Lab.push(34));
 
-console.log(Tail.push(34));
-console.log(Tail.push([6, 8, 9]));
-console.log(Tail.push(79));
-console.log(Tail.push({ name: "peter" }));
-console.log(Tail.push(09));
+console.log(Lab.push(34));
+console.log(Lab.push([6, 8, 9]));
+console.log(Lab.push(79));
+console.log(Lab.push({ name: "peter" }));
+console.log(Lab.push(09));
 console.log("");
-console.log(Tail.length);
-Tail.remove();
+console.log(Lab.length);
+Lab.remove();
 console.log("");
-console.log(Tail.length);
+console.log(Lab.length);

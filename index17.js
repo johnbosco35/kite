@@ -1,13 +1,13 @@
 /** @format */
 
-class Node {
+class Reduce {
   constructor(val) {
     this.value = val;
     this.next = null;
   }
 }
 
-class Tail {
+class Some {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -15,7 +15,7 @@ class Tail {
   }
 
   push(val) {
-    let node = new Node(val);
+    let Reduce = new Reduce(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,17 +46,17 @@ class Tail {
   }
 }
 console.clear();
-let Hub = new Tail();
-console.log(Tail.push(39));
-console.log(Tail.push(34));
+let Some = new Some();
+console.log(Some.push(39));
+console.log(Some.push(34));
 
-console.log(Tail.push(34));
-console.log(Tail.push([6, 8, 9]));
-console.log(Tail.push(79));
-console.log(Tail.push({ name: "peter" }));
-console.log(Tail.push(09));
+console.log(Some.push(34));
+console.log(Some.push([6, 8, 9]));
+console.log(Some.push(79));
+console.log(Some.push({ name: "peter" }));
+console.log(Some.push(09));
 console.log("");
-console.log(Tail.length);
-Tail.remove();
+console.log(Some.length);
+Some.remove();
 console.log("");
-console.log(Tail.length);
+console.log(Some.length);

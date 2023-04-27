@@ -1,13 +1,13 @@
 /** @format */
 
-class Node {
+class Sort {
   constructor(val) {
     this.value = val;
     this.next = null;
   }
 }
 
-class Tail {
+class Map {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -15,7 +15,7 @@ class Tail {
   }
 
   push(val) {
-    let node = new Node(val);
+    let Sort = new Sort(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,17 +46,17 @@ class Tail {
   }
 }
 console.clear();
-let Hub = new Tail();
-console.log(Tail.push(39));
-console.log(Tail.push(34));
+let Map = new Map();
+console.log(Map.push(39));
+console.log(Map.push(34));
 
-console.log(Tail.push(34));
-console.log(Tail.push([6, 8, 9]));
-console.log(Tail.push(79));
-console.log(Tail.push({ name: "peter" }));
-console.log(Tail.push(09));
+console.log(Map.push(34));
+console.log(Map.push([6, 8, 9]));
+console.log(Map.push(79));
+console.log(Map.push({ name: "peter" }));
+console.log(Map.push(09));
 console.log("");
-console.log(Tail.length);
-Tail.remove();
+console.log(Map.length);
+Map.remove();
 console.log("");
-console.log(Tail.length);
+console.log(Map.length);

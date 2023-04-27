@@ -1,13 +1,13 @@
 /** @format */
 
-class Node {
+class Find {
   constructor(val) {
     this.value = val;
     this.next = null;
   }
 }
 
-class Tail {
+class Paint {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -15,7 +15,7 @@ class Tail {
   }
 
   push(val) {
-    let node = new Node(val);
+    let Find = new Find(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,17 +46,17 @@ class Tail {
   }
 }
 console.clear();
-let Hub = new Tail();
-console.log(Tail.push(39));
-console.log(Tail.push(34));
+let Paint = new Paint();
+console.log(Paint.push(39));
+console.log(Paint.push(34));
 
-console.log(Tail.push(34));
-console.log(Tail.push([6, 8, 9]));
-console.log(Tail.push(79));
-console.log(Tail.push({ name: "peter" }));
-console.log(Tail.push(09));
+console.log(Paint.push(34));
+console.log(Paint.push([6, 8, 9]));
+console.log(Paint.push(79));
+console.log(Paint.push({ name: "peter" }));
+console.log(Paint.push(09));
 console.log("");
-console.log(Tail.length);
-Tail.remove();
+console.log(Paint.length);
+Paint.remove();
 console.log("");
-console.log(Tail.length);
+console.log(Paint.length);

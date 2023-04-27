@@ -1,6 +1,6 @@
 /** @format */
 
-class Node {
+class Head {
   constructor(val) {
     this.value = val;
     this.next = null;
@@ -15,7 +15,7 @@ class Tail {
   }
 
   push(val) {
-    let node = new Node(val);
+    let Head = new Head(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,7 +46,7 @@ class Tail {
   }
 }
 console.clear();
-let Hub = new Tail();
+let Tail = new Tail();
 console.log(Tail.push(39));
 console.log(Tail.push(34));
 

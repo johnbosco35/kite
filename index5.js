@@ -46,17 +46,17 @@ class Hub {
   }
 }
 console.clear();
-let listeds = new Mail();
-console.log(Mail.push(39));
-console.log(Mail.push(34));
+let listeds = new Tail();
+console.log(Tail.push(39));
+console.log(Tail.push(34));
 
-console.log(Mail.push(34));
-console.log(Mail.push([6, 8, 9]));
-console.log(Mail.push(79));
-console.log(Mail.push({ name: "peter" }));
-console.log(Mail.push(09));
+console.log(Tail.push(34));
+console.log(Tail.push([6, 8, 9]));
+console.log(Tail.push(79));
+console.log(Tail.push({ name: "peter" }));
+console.log(Tail.push(09));
 console.log("");
-console.log(Mail.length);
-Mail.remove();
+console.log(Tail.length);
+Tail.remove();
 console.log("");
-console.log(Mail.length);
+console.log(Tail.length);

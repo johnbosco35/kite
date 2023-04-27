@@ -1,13 +1,13 @@
 /** @format */
 
-class Node {
+class ForEach {
   constructor(val) {
     this.value = val;
     this.next = null;
   }
 }
 
-class Tail {
+class Every {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -15,7 +15,7 @@ class Tail {
   }
 
   push(val) {
-    let node = new Node(val);
+    let ForEach = new ForEach(val);
     if (!this.head) {
       this.head = node;
       this.tail = this.head;
@@ -46,17 +46,17 @@ class Tail {
   }
 }
 console.clear();
-let Hub = new Tail();
-console.log(Tail.push(39));
-console.log(Tail.push(34));
+let Every = new Every();
+console.log(Every.push(39));
+console.log(Every.push(34));
 
-console.log(Tail.push(34));
-console.log(Tail.push([6, 8, 9]));
-console.log(Tail.push(79));
-console.log(Tail.push({ name: "peter" }));
-console.log(Tail.push(09));
+console.log(Every.push(34));
+console.log(Every.push([6, 8, 9]));
+console.log(Every.push(79));
+console.log(Every.push({ name: "peter" }));
+console.log(Every.push(09));
 console.log("");
-console.log(Tail.length);
-Tail.remove();
+console.log(Every.length);
+Every.remove();
 console.log("");
-console.log(Tail.length);
+console.log(Every.length);
